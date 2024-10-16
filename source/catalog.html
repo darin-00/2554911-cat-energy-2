@@ -27,7 +27,9 @@
             <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
-        <button class="navigation__menu-button" type="button" aria-label="Открыть меню"></button>
+        <button class="navigation__menu-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -41,7 +43,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy PRO 500&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -58,7 +60,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy PRO 1000&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -75,7 +77,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy PRO 500&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -92,7 +94,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy PRO 1000&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -109,7 +111,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy SLIM 500&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -126,7 +128,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy SLIM 1000&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -143,7 +145,7 @@
           <li class="catalog__item card">
             <a class="card__link-image" href="#" tabindex="-1">
               <img class="card__image" src="#" width="140" height="107" alt="."></a>
-            <a class="card__link-title" href="#" tabindex="-1">
+            <a class="card__link-title" href="#">
               <h2 class="card__title">Cat Energy SLIM 500&nbsp;г</h2>
             </a>
             <dl class="card__description">
@@ -170,43 +172,43 @@
       <div class="container">
         <h2 class="sub-product__title">Дополнительные товары</h2>
         <ul class="sub-product__list">
-          <li class="sub-product__item">
-            <h3 class="sub-product__title">Сахарозаменитель</h3>
-            <dl class="sub-product__description">
-              <dt class="sub-product-parameter visually-hidden">Объем</dt>
-              <dd class="sub-productt-value">1 упаковка (100&nbsp;г)</dd>
-              <dt class="sub-product-parameter visually-hidden">Цена</dt>
-              <dd class="sub-product-value">200&nbsp;₽</dd>
+          <li class="sub-product__item sub-card">
+            <h3 class="sub-card__title">Сахарозаменитель</h3>
+            <dl class="sub-card__description">
+              <dt class="sub-card__parameter visually-hidden">Объем</dt>
+              <dd class="sub-card__value">1 упаковка (100&nbsp;г)</dd>
+              <dt class="sub-card__parameter visually-hidden">Цена</dt>
+              <dd class="sub-card__value">200&nbsp;₽</dd>
             </dl>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
-          <li class="sub-product__item">
-            <h3 class="sub-product__title">Питьевая вода</h3>
-            <dl class="sub-product__description">
-              <dt class="sub-product-parameter visually-hidden">Объем</dt>
-              <dd class="sub-productt-parameter">5 литров</dd>
-              <dt class="sub-product-parameter visually-hidden">Цена</dt>
-              <dd class="sub-product-value">50&nbsp;₽</dd>
+          <li class="sub-product__item sub-card">
+            <h3 class="sub-card__title">Питьевая вода</h3>
+            <dl class="sub-card__description">
+              <dt class="sub-card__parameter visually-hidden">Объем</dt>
+              <dd class="sub-card__value">5 литров</dd>
+              <dt class="sub-card__parameter visually-hidden">Цена</dt>
+              <dd class="sub-card__value">50&nbsp;₽</dd>
             </dl>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
-          <li class="sub-product__item">
-            <h3 class="sub-product__title">Молоко</h3>
-            <dl class="sub-product__description">
-              <dt class="sub-product-parameter visually-hidden">Объем</dt>
-              <dd class="sub-productt-parameter">1 литр</dd>
-              <dt class="sub-product-parameter visually-hidden">Цена</dt>
-              <dd class="sub-product-value">100&nbsp;₽</dd>
+          <li class="sub-product__item sub-card">
+            <h3 class="sub-card__title">Молоко</h3>
+            <dl class="sub-card__description">
+              <dt class="sub-card__parameter visually-hidden">Объем</dt>
+              <dd class="sub-card__value">1 литр</dd>
+              <dt class="sub-card__parameter visually-hidden">Цена</dt>
+              <dd class="sub-card__value">100&nbsp;₽</dd>
             </dl>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
-          <li class="sub-product__item">
-            <h3 class="sub-product__title">Витамины</h3>
-            <dl class="sub-product__description">
-              <dt class="sub-product-parameter visually-hidden">Объем</dt>
-              <dd class="sub-productt-parameter">1 упаковка (30&nbsp;г)</dd>
-              <dt class="sub-product-parameter visually-hidden">Цена</dt>
-              <dd class="sub-product-value">300&nbsp;₽</dd>
+          <li class="sub-product__item sub-card">
+            <h3 class="sub-card__title">Витамины</h3>
+            <dl class="sub-card__description">
+              <dt class="sub-card__parameter visually-hidden">Объем</dt>
+              <dd class="sub-card__value">1 упаковка (30&nbsp;г)</dd>
+              <dt class="sub-card__parameter visually-hidden">Цена</dt>
+              <dd class="sub-card__value">300&nbsp;₽</dd>
             </dl>
             <button class="button button--primary" type="button">Заказать</button>
           </li>
@@ -215,9 +217,7 @@
     </section>
 
     <section class="gift">
-      <div class="container">
-        <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
-      </div>
+      <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
     </section>
     <section class="subscribe">
       <div class="container">
@@ -237,7 +237,7 @@
       <section class="address">
         <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="address__cart cart" src="#" alt="Карта" width="320" height="362">
+        <img class="address__map map" src="#" alt="Карта" width="320" height="362">
       </section>
       <a class="footer-logo logo" href="./index.html">
         <img class="logo__image" src="#" alt="Логотип сайта" width="128" height="24">
@@ -262,8 +262,8 @@
           </li>
         </ul>
       </section>
-      <a class="dev-logo-link" href="https://ages/logo-htmlacademy.svghtmlacademy.ru/">
-        <p class="dev-logo-link__title">HTML Academy</p>
+      <a class="dev-logo-link" href="#">
+        <span class="dev-logo-link__title">HTML Academy</span>
       </a>
     </div>
   </footer>

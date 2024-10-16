@@ -27,7 +27,9 @@
             <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
-        <button class="navigation__menu-button menu-button" type="button" aria-label="Открыть меню"></button>
+        <button class="navigation__menu-button menu-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -86,17 +88,15 @@
       <div class="container">
         <div class="experience__description">
           <h2 class="experience__title">Живой пример</h2>
-          <p class="experience__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="experience__date">
-            <dt class="parameter">Снижение веса</dt>
-            <dd class="result">5 кг</dd>
-            <dt class="parameter">Затрачено времени</dt>
-            <dd class="result">60 дней</dd>
+          <p class="experience__text">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="experience__data">
+            <dt class="experience__data-parameter">Снижение веса</dt>
+            <dd class="experience__data-result">5 кг</dd>
+            <dt class="experience__data-parameter">Затрачено времени</dt>
+            <dd class="experience__data-result">60 дней</dd>
           </dl>
-          <div class="experience__costs">
-            <span class="costs-title">Затраты на питание:</span>
-            <span class="costs-text">15 000 руб.</span>
-          </div>
+          <span class="experience__costs-title">Затраты на питание:</span>
+          <span class="experience__costs-text">15&nbsp;000&nbsp;руб.</span>
         </div>
         <div class="experience__demo">
           <img class="demo" src="#" alt="Демонстрация кота до и после" width="280" height="256">
@@ -110,7 +110,7 @@
       <section class="address">
         <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="address__cart cart" src="#" alt="Карта" width="320" height="362">
+        <img class="address__map map" src="#" alt="Карта" width="320" height="362">
       </section>
       <a class="footer-logo logo" href="./index.html">
         <img class="logo__image" src="#" alt="Логотип сайта" width="128" height="24">
@@ -135,8 +135,8 @@
           </li>
         </ul>
       </section>
-      <a class="dev-logo-link" href="https://ages/logo-htmlacademy.svghtmlacademy.ru/">
-        <p class="dev-logo-link__title">HTML Academy</p>
+      <a class="dev-logo-link" href="#">
+        <span class="dev-logo-link__title">HTML Academy</span>
       </a>
     </div>
   </footer>
