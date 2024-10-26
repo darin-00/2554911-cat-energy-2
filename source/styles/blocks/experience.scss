@@ -1,0 +1,48 @@
+.experience {
+  background-color: $bg-second-grey;
+}
+
+.experience__description{}
+
+.experience__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.experience__text{}
+
+.experience__data{}
+
+.experience__data-parameter {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.experience__data-result {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.experience__costs {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.experience__costs-title{}
+
+.experience__costs-text{}
+
+.experience__demo{}
