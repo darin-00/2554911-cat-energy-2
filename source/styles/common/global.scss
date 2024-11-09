@@ -1,7 +1,8 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $font-basic;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  color: $base-color-text;
+  line-height: 1.3;
+  color: $color-text-base;
+  background-color: $color-light;
 }

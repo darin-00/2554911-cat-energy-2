@@ -1,15 +1,19 @@
-.catalog{}
-
-.catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
+.catalog {
+  //
 }
 
-.catalog__list{
+.catalog__title {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: $color-text-accent;
+}
+
+.catalog__list {
   list-style-type: none;
 }
 
-.catalog__item{}
+.catalog__item {
+  //
+}

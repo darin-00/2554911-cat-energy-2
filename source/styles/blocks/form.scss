@@ -1,10 +1,15 @@
-.form{}
+.form {
+  //
+}
 
 .form__input {
   font-family: inherit;
   font-size: 20px;
   text-transform: uppercase;
-  color: $base-color-text;
+  color: $color-text-base;
 }
 
-.form__button{}
+.form__button {
+  font-size: 20px;
+  line-height: 1.3;
+}

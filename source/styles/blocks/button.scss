@@ -1,7 +1,7 @@
 .button {
   font-size: 16px;
-  line-height: 20px;
-  font-family: inherit;
+  line-height: 1.25;
+  font-family: $font-second;
   font-weight: inherit;
   text-transform: uppercase;
   text-align: center;
@@ -9,15 +9,11 @@
 }
 
 .button--primary {
-  color: #ffffff;
-
-  background-color: $bg-basic-green;
+  color: $color-light;
+  background-color: $color-accent;
 }
 
 .button--secondary {
-  background-color: $bg-basic-grey;
-}
-
-.button--subscribe{
-
+  color: $color-text-base;
+  background-color: $color-basic;
 }
