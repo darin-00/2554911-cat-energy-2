@@ -53,6 +53,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
@@ -119,6 +120,52 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--benefit::after {
+      content: "";
+      z-index: -1;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 124px;
+      background-image: url("../../icons/stack.svg#number-1");
+      width: 71px;
+      height: 227px;
+    }
+
+    &--powder::after {
+      content: "";
+      z-index: -1;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 124px;
+      background-image: url("../../icons/stack.svg#number-2.svg");
+      width: 113px;
+      height: 229px;
+    }
+
+    &--cooking::after {
+      content: "";
+      z-index: -1;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 124px;
+      background-image: url("../../icons/stack.svg#number-3.svg");
+      width: 112px;
+      height: 232px;
+    }
+
+    &--time::after {
+      content: "";
+      z-index: -1;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 124px;
+      background-image: url("../../icons/stack.svg#number-4.svg");
+      width: 113px;
+      height: 229px;
     }
   }
 }
