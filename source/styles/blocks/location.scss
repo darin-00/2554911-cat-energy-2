@@ -1,8 +1,21 @@
 .location {
-  //
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+
+.location iframe {
+  grid-template-columns: 1/-1;
+  grid-template-rows: 1/-1;
+  border: none;
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 .location__image {
+  grid-template-columns: 1/-1;
+  grid-template-rows: 1/-1;
   margin: auto;
   display: block;
 }

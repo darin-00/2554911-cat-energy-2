@@ -28,6 +28,13 @@
   }
 }
 
+.navigation--nojs .navigation__header {
+  @media (max-width: $tablet-width) {
+    justify-content: start;
+    gap: 56px;
+  }
+}
+
 .navigation__logo {
   @media (min-width: $tablet-width) {
     padding-right: 13px;
@@ -47,6 +54,27 @@
     flex-flow: row wrap;
     justify-content: end;
   }
+}
+
+.navigation--open .navigation__list {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 63px;
+    z-index: 10;
+    min-width: 100vw;
+    background-color: $color-light;
+  }
+}
+
+.navigation--close .navigation__list {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--nojs .navigation__list {
+  position: static;
+  display: flex;
 }
 
 .navigation__item {
@@ -87,7 +115,71 @@
 }
 
 .navigation__menu-button {
+  padding: 10px;
+  background-color: $color-light;
+
+  &:hover::before,
+  :focus::before {
+    background-color: $color-logo-focus;
+  }
+
+  &:active::before {
+    background-color: $color-logo-active;
+  }
+
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation--open .navigation__menu-button {
+  @media (max-width: $tablet-width) {
+    &::before {
+      content: "";
+      mask-repeat: no-repeat;
+      background-color: $color-text-accent;
+      mask-position: center center;
+      display: block;
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/stack.svg#close-button");
+    }
+
+    &:hover::before,
+    :focus::before {
+      background-color: $color-logo-focus;
+    }
+
+    &:active::before {
+      background-color: $color-logo-active;
+    }
+  }
+}
+
+.navigation--close .navigation__menu-button {
+  @media (max-width: $tablet-width) {
+    &::before {
+      content: "";
+      mask-repeat: no-repeat;
+      background-color: $color-text-accent;
+      mask-position: center center;
+      display: block;
+      width: 24px;
+      height: 24px;
+      mask-image: url("../../icons/stack.svg#burger-menu");
+    }
+
+    &:hover::before,
+    :focus::before {
+      background-color: $color-logo-focus;
+    }
+
+    &:active::before {
+      background-color: $color-logo-active;
+    }
+  }
+
+  .navigation--nojs .navigation__menu-button {
     display: none;
   }
 }
