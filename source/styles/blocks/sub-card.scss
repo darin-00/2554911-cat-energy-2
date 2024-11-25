@@ -3,8 +3,11 @@
   flex-direction: column;
   padding-block: 13px;
   border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
   align-items: center;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
@@ -28,6 +31,8 @@
   color: $color-text-base-2;
   margin: 0;
   padding-bottom: 13px;
+  text-align: start;
+  align-self: start;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

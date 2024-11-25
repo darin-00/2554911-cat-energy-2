@@ -29,12 +29,33 @@
   text-align: start;
   padding-block: 25px 36px;
   margin: 0;
+  background: $color-light;
+  width: fit-content;
+  box-shadow:
+    40px 0 0 0 $color-light,
+    -40px 0 0 0 $color-light;
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 40%;
+    height: 2px;
+    width: 100vw;
+    background-color: $color-accent;
+    box-shadow: 100vw 0 0 0 $color-accent;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     padding-left: 40px;
     padding-block: 74px 80px;
+
+    &::before {
+      top: 45%;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -5,19 +5,45 @@
 
 .subscribe__title {
   margin: 0;
-  padding-block: 40px 32px;
+  padding-block: 25px 32px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
+  background: $color-light;
+  width: fit-content;
+  box-shadow:
+    40px 0 0 0 $color-light,
+    -40px 0 0 0 $color-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 40%;
+    height: 2px;
+    width: 100vw;
+    background-color: $color-accent;
+    box-shadow: 100vw 0 0 0 $color-accent;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
-    padding-block: 80px 66px;
+    padding-block: 55px 66px;
+
+    &::before {
+      top: 45%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
-    padding-block: 96px 72px;
+    padding-block: 70px 72px;
+
+    &::before {
+      top: 48%;
+    }
   }
 }
 

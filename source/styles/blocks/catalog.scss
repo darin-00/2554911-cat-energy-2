@@ -1,5 +1,7 @@
 .catalog {
-  //
+  @media (max-width: $before-tablet-width) {
+    border-top: solid 1px $color-line-decor;
+  }
 }
 
 .catalog__title {

@@ -4,11 +4,12 @@
 
   &::before {
     content: "";
-    display: block;
+    position: absolute;
+    right: 0;
     height: 1px;
     width: 100vw;
     background-color: $color-line-decor-light;
-    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 100vw 0 0 0 $color-line-decor-light;
   }
 
@@ -17,6 +18,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 37px 40px;
+    background: linear-gradient(to top, $color-basic 84%, $color-light 16%);
 
     &::before {
       display: none;
@@ -48,7 +50,13 @@
 }
 
 .card__image {
-  //
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__link-title {
@@ -60,6 +68,14 @@
   max-width: 80px;
   padding-block: 20px 14px;
   min-height: 55px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-block: 22px 20px;
@@ -107,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 85px);
+    grid-template-columns: repeat(2, 80px);
     padding-bottom: 37px;
   }
 }
@@ -115,6 +131,25 @@
 .card__product-parameter {
   margin: 0;
   justify-self: start;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $color-border;
+      position: absolute;
+      width: 250px;
+      left: 0;
+      bottom: -5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 170px;
+    }
+  }
 }
 
 .card__product-value {

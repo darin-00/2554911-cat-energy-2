@@ -3,12 +3,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-block: 40px;
-  gap: 20px;
+  padding-block: 24px 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-block: 55px;
+    padding-block: 45px;
   }
 
   @media (min-width: $desktop-width) {
