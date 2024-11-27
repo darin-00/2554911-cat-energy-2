@@ -16,36 +16,6 @@
   }
 }
 
-.form__input {
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: $color-text-base;
-  padding: 13px;
-  border: 1px solid $color-border-light;
-
-  &:hover {
-    border: 1px solid $color-border;
-  }
-
-  &:focus {
-    border: 2px solid $color-text-base;
-  }
-
-  &:invalid {
-    border: 2px solid $status-error;
-  }
-
-  &::placeholder {
-    color: $color-text-base;
-  }
-
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
-  }
-}
-
 .form__button {
   font-size: 20px;
   line-height: 1.3;

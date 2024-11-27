@@ -16,10 +16,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
 
+  @media (min-width: $tablet-width) {
+    gap: 6px;
+  }
 
   @media (min-width: $desktop-width) {
-    //
+    gap: 8;
   }
 }
 
@@ -29,7 +33,7 @@
 }
 
 .social__link {
-  padding: 20px 12px;
+  padding: 22px 10px 20px;
 
   &::before {
     display: block;
@@ -41,8 +45,12 @@
     background-color: $color-brand;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 20px 10px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 20px 14px;
+    padding: 20px 8px;
   }
 
   &--vk::before {

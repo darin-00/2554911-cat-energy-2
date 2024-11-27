@@ -27,4 +27,11 @@ body {
 img {
   height: auto;
   object-fit: contain;
+  object-position: center;
+}
+
+.br {
+  @media (max-width: $before-tablet-width) {
+    display: none;
+  }
 }

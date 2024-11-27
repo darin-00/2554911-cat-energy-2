@@ -42,6 +42,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 14px;
+  }
 }
 
 .navigation__list {
@@ -133,7 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 15px;
+    padding-block: 12px;
     font-size: 20px;
     line-height: 1;
 
@@ -141,8 +145,10 @@
       color: $color-light;
     }
   }
+}
 
-  &--current-accent::after {
+.navigation__link--accent.navigation__link--current::after {
+  @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
     right: 0;
@@ -152,7 +158,6 @@
     background-color: $color-light;
   }
 }
-
 
 .navigation--open .navigation__link {
   @media (max-width: $before-tablet-width) {

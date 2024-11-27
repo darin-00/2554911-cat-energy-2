@@ -40,7 +40,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 40%;
+    margin-top: 0.4em;
     height: 2px;
     width: 100vw;
     background-color: $color-accent;
@@ -53,9 +53,10 @@
     padding-left: 40px;
     padding-block: 74px 80px;
 
-    &::before {
-      top: 45%;
-    }
+    // &::before {
+    //   // top: 45%;
+    //   margin-top: 0.4em;
+    // }
   }
 
   @media (min-width: $desktop-width) {
