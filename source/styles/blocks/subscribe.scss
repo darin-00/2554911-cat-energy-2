@@ -5,7 +5,7 @@
 
 .subscribe__title {
   margin: 0;
-  padding-block: 25px 32px;
+  padding-block: 30px 32px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -20,7 +20,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 40%;
+    margin-top: 0.5em;
     height: 2px;
     width: 100vw;
     background-color: $color-accent;
@@ -31,19 +31,13 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     padding-block: 55px 66px;
-
-    &::before {
-      top: 45%;
-    }
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
-    padding-block: 70px 72px;
-
-    &::before {
-      top: 48%;
-    }
+    padding: 0;
+    padding-block: 70px 73px;
   }
 }
 
@@ -66,6 +60,3 @@
   }
 }
 
-.subscribe__form {
-  //
-}

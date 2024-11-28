@@ -163,10 +163,6 @@
     padding-block: 28px 5px;
   }
 
-  @media (min-width: $desktop-width) {
-    //
-  }
-
   &::after {
     display: block;
     margin-left: 15px;
@@ -184,7 +180,8 @@
     }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-position-x: 50%;
   }
 }

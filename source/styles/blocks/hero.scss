@@ -5,6 +5,10 @@
   min-height: 460px;
 
   @media (max-width: $before-tablet-width) {
+    background: linear-gradient($color-accent-backgraund 60%, $color-light 37%);
+  }
+
+  @media (max-width: $before-tablet-width) {
     position: relative;
   }
 
@@ -19,12 +23,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
-      background-image: linear-gradient($accent-accent-transparent, $accent-accent-transparent), url("../../images/index-background-mobile@1x.jpg"), $background-color-grey;
+      z-index: 1;
+      background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/index-background-mobile@1x.jpg" 1x type("image/jpg"), "../../images/index-background-mobile@2x.jpg" 2x type("image/jpg")), $background-color-grey;
       background-position: 50%;
       background-repeat: no-repeat;
       width: 100vw;
-      height: 302px;
+      min-height: 302px;
       margin-bottom: 135px;
     }
 
@@ -34,7 +38,7 @@
       top: 0;
       right: 0;
       z-index: -1;
-      background-image: linear-gradient($accent-accent-transparent, $accent-accent-transparent), url("../../images/index-background-desktop@1x.jpg"), $background-color-grey;
+      background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/index-background-desktop@1x.jpg" 1x type("image/jpg"), "../../images/index-background-desktop@2x.jpg" 2x type("image/jpg")), $background-color-grey;
       background-repeat: no-repeat;
       width: 50%;
       height: 694px;
@@ -74,6 +78,7 @@
   margin: 0;
   padding: 27px 0 25px;
   max-width: 250px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
@@ -101,7 +106,7 @@
   margin: 0;
   padding-bottom: 29px;
   max-width: 250px;
-
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
@@ -122,6 +127,8 @@
 
 .hero__image-container {
   display: block;
+  z-index: 2;
+
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -129,9 +136,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
+    grid-column: 3/-1;
     grid-row: 1/-1;
-    padding-left: 447px;
   }
 }
 
@@ -151,7 +157,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // max-width: 420px;
     margin: 0;
     align-self: start;
   }

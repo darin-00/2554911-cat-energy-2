@@ -5,9 +5,9 @@
   justify-content: end;
   align-items: center;
   padding-block: 58px 43px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   min-height: 290px;
-  background-image: linear-gradient($accent-accent-transparent, $accent-accent-transparent), url("../../images/catalog-background-mobile@1x.jpg"), $background-color-light-grey;
+  background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/catalog-background-mobile@1x.jpg" 1x type("image/jpg"), "../../images/catalog-background-mobile@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -15,16 +15,16 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 77px;
-    background-image: linear-gradient($accent-accent-transparent, $accent-accent-transparent), url("../../images/catalog-background-tablet@1x.jpg"), $background-color-light-grey;
+    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/catalog-background-tablet@1x.jpg" 1x type("image/jpg"), "../../images/catalog-background-tablet@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: end;
     min-height: 288px;
-    padding: 23px 41px;
+    padding: 23px 41px 40px;
     width: 245px;
-    background-image: linear-gradient($accent-accent-transparent, $accent-accent-transparent), url("../../images/catalog-background-desktop@1x.jpg"), $background-color-light-grey;
+    background-image: linear-gradient($color-accent-transparent, $color-accent-transparent), image-set("../../images/catalog-background-desktop@1x.jpg" 1x type("image/jpg"), "../../images/catalog-background-desktop@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
   }
 
   &::before {

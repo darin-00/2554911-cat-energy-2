@@ -15,7 +15,8 @@
   color: $color-light;
   background-color: $color-accent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-accent-hover;
   }
 
@@ -30,7 +31,8 @@
   background-color: $color-basic;
 
   &:hover,
-  :active {
+  &:active,
+  &:focus {
     background-color: $color-line-decor-light;
   }
 }

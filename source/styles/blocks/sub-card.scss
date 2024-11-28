@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-block: 13px;
-  border-top: 1px solid $color-border;
+  border-block: 1px solid $color-border;
   align-items: center;
 
   &:last-child {
@@ -18,7 +18,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 15px 0;
+    min-height: 72px;
   }
 }
 
@@ -30,7 +32,7 @@
   text-transform: uppercase;
   color: $color-text-base-2;
   margin: 0;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   text-align: start;
   align-self: start;
 
@@ -46,10 +48,12 @@
     width: 324px;
     padding-right: 24px;
     padding-block: 0;
+    align-self: center;
   }
 }
 
 .sub-card__description {
+  margin: 0;
   font-size: 14px;
   line-height: 1;
   padding-bottom: 15px;
@@ -64,13 +68,16 @@
     grid-column: 2/3;
     grid-row: 1/2;
     justify-content: end;
+    padding-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     font-size: 16px;
-    padding-block: 0;
+    padding: 0;
     width: 325px;
+    padding-top: 5px;
+    align-self: center;
   }
 }
 

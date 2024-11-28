@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1000px;
+    max-width: 600px;
   }
 }
 
@@ -113,7 +113,8 @@
   box-sizing: border-box;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

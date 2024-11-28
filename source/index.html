@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/demo.js" defer></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
               <img class="logo__text" src="images/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип сайта кэт энерджи">
             </picture>
           </a>
-          <button class="navigation__menu-button menu-button button" type="button">
+          <button class="navigation__menu-button button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -128,14 +129,14 @@
             </div>
           </div>
         </div>
-        <div class="experience__demo demo" style=" --curtain-place: 0.5;">
+        <div class="experience__demo demo demo--nojs">
           <picture class="demo__image demo__image--before">
             <source type="image/png" media="(min-width: 1440px)" srcset="images/state-before-desktop@1x.png 1x, images/state-before-desktop@2x.png 2x" width="560" height="512">
             <source type="image/png" media="(min-width: 768px)" srcset="images/state-before-tablet@1x.png 1x, images/state-before-tablet@2x.png 2x" width="560" height="512">
             <img class="demo__image demo__image--before" src="images/state-before-mobile@1x.png" srcset="images/state-before-mobile@2x.png 2x" width="280" height="256" alt="Демонстрация кота до">
           </picture>
 
-          <div class="demo__curtain">
+          <div class="demo__curtain demo__curtain--nojs">
             <button class="demo__thumb" type="button">
               <span class="visually-hidden">Ползунок слайдера</span>
             </button>
